@@ -54,7 +54,7 @@ app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-M
 // populated 
 var myModel  = require('./app/models/userInfo');
 
-//GET request
+//GET request. Set API URL to any URL except the routes to views
 app.get('/api/display',(req, res,next)=>{
    
   myModel.find(function(err, tasks){
@@ -67,7 +67,7 @@ app.get('/api/display',(req, res,next)=>{
   }) 
 })
 
-//post request
+//post request. Set API URL to any URL except the routes to views
 app.post('/api/save', (req, res, next)=>{
     
     var info=req.body;
@@ -86,7 +86,7 @@ app.post('/api/save', (req, res, next)=>{
    
 })
 
-//delete request
+//delete request. Set API URL to any URL except the routes to views
 app.delete('/api/display/:_id', (req, res, next)=>{
    
    console.log(req.params._id);

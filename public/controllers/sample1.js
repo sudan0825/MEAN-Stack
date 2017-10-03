@@ -23,7 +23,7 @@ angular.module('sample1',[]).controller('sample1Ctrl', ['$scope', '$http', funct
     
     $scope.deleteInfo=function(id){
        
-         console.log("can I get ID: "+id);
+         //For passing one parameters only, we do not need $.param function
         
          $http.delete('/api/display/'+ id).then((res)=>{
                //display user info after deleting

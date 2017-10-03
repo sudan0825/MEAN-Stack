@@ -34,14 +34,14 @@ meanApp.controller('homeCtrl',['$scope', '$http', '$httpParamSerializer', functi
                     'Content-Type':'application/x-www-form-urlencoded'
                 }
             }
-           //WRAP THE DATA IN ONE POCKET
+           //WRAP THE DATA IN ONE POCKET 
            var myData = $.param({
                name: $scope.data.name,
                password: $scope.data.password,
                age: $scope.data.age
            })
           console.log(myData);
-            
+            //URL is the address same as front Restful API
             $http.post('/api/save', myData, config)
             .then((response)=>{
  
