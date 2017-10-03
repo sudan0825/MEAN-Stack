@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <meta name="description" content="Create a mean stack from scratch using MEAN only"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sunshine Su">
+    <title>MEAN STACK FROM SCRATCH</title>
+    
+      <!--CSS-->
+    
+ 
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!--Script-->
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+    <script src="../node_modules/angular-resource/angular-resource.js"></script>
+    
+    
+    <!--js files-->
+    
+    <script src="controllers/sample3.js"></script>
+    <script src="controllers/sample2.js"></script>
+    <script src="controllers/sample1.js"></script>
+    <script src="controllers/home.js"></script>
+    
+    
+    
+  
+    
+</head>
+<body ng-app="meanApp"> 
+    
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">MEANSTACK</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a href="/views/sample1">SAMPLE1</a></li>
+      <li><a href="/views/sample2">SAMPLE2</a></li>
+     <li><a href="/views/sample3">SAMPLE3</a></li>
+      
+    </ul>
+  </div>
+</nav>
+    
+   
+   
+    <ng-view></ng-view>
+
+</body>
+
+
+</html>
